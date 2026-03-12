@@ -15,13 +15,16 @@ export default defineConfig({
     })
   ],
   server: {
-    port: 3002,
+    port: 5002,
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
   },
   preview: {
-    port: 5002, // Porta fixa para o preview
+    port: 5002, 
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
   build: {
     target: "esnext",
